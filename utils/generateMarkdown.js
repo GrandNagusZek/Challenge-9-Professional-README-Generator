@@ -42,7 +42,7 @@ ${data.contributing}
 ## License
 
 ${renderLicenseSection(data.license)}
-
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Badges
 
@@ -54,6 +54,14 @@ Badges aren't necessary, per se, but they demonstrate street cred. Badges let ot
 ## Tests
 
 ${data.test}
+
+## Questions
+
+<ul>
+  <li> <a href='mailto://${data.email}?subject="contact me"&body="hi"'> Email Me </a> </li>
+  <li> <a href='https://github.com/${data.username}> My GitHub Profile </a> </li>
+</ul>
+
 `;
 }
 
