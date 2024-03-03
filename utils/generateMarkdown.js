@@ -8,29 +8,37 @@ function renderLicenseBadge(license) {
   } else if(license==="IBM"){
     return `[![License: IPL 1.0](https://img.shields.io/badge/License-IPL_1.0-blue.svg)](https://opensource.org/licenses/IPL-1.0)`
   }else (license==="No License");{
-    return `None`
+    return `[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)`
   }
 }
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-  const licenseLink = renderLicenseLink(license);
+  const licenseBadge = renderLicenseBadge(license);
 
-  if (licenseLink) {
+  if (licenseBadge) {
     return `[![License](https://img.shields.io/badge/License-${license}-yellow.svg)](${licenseLink})`;
   } else {
-    return "";
+    return " ";
   }
 }
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
+function renderLicenseSection(license) {
+  const licenseBadge = renderLicenseBadge(license);
+
+  if (licenseBadge) {
+    return `${licenseBadge}`
+  }else {
+    return " ";
+  }
+}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title}
+  return `${data.title}
 
 ${renderLicenseBadge(data.license)}
 
@@ -59,8 +67,8 @@ ${data.contributing}
 
 ## License
 
-${renderLicenseSection(data.license)}
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+${data.license}
+
 
 ## Badges
 
@@ -78,7 +86,7 @@ For questions about this project, please use the following contact methods:
 
 <ul>
   <li> <a href='mailto://${data.email}?subject="contact me"&body="hi"'> Email Me </a> </li>
-  <li> <a href='https://github.com/${data.username}> My GitHub Profile </a> </li>
+  <li> <a href='https://github.com/${data.username}'> My GitHub Profile </a> </li>
 </ul>
 
 `;

@@ -63,7 +63,7 @@ function writeToFile(fileName, data) {
             console.error(err);
             return
         }
-        console.log("Success!")
+        console.log("README successfully generated!")
     })
 
 }

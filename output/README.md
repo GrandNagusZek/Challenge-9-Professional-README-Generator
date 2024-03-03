@@ -1,10 +1,10 @@
-# sdf
+d
 
-[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
 
-sdfsd
+d
 
 ## Table of Contents (Optional)
 
@@ -15,20 +15,20 @@ sdfsd
 
 ## Installation
 
-sdfsd
+d
 
 ## Usage
 
-sdfsd    
+d    
 
 ## Contributing
 
-sdfsdf
+d
 
 ## License
 
-undefined
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+MIT
+
 
 ## Badges
 
@@ -38,12 +38,14 @@ undefined
 
 ## Tests
 
-sdfsd
+d
 
 ## Questions
 
+For questions about this project, please use the following contact methods: 
+
 <ul>
-  <li> <a href='mailto://sdfsd?subject="contact me"&body="hi"'> Email Me </a> </li>
-  <li> <a href='https://github.com/sdf> My GitHub Profile </a> </li>
+  <li> <a href='mailto://d?subject="contact me"&body="hi"'> Email Me </a> </li>
+  <li> <a href='https://github.com/d'> My GitHub Profile </a> </li>
 </ul>
 
