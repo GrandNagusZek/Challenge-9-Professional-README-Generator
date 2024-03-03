@@ -3,12 +3,26 @@
 function renderLicenseBadge(license) {
   if(license==="MIT"){
     return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`
+  } else if(license==="Apache"){
+    return `[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`
+  } else if(license==="IBM"){
+    return `[![License: IPL 1.0](https://img.shields.io/badge/License-IPL_1.0-blue.svg)](https://opensource.org/licenses/IPL-1.0)`
+  }else (license==="No License");{
+    return `None`
   }
 }
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+function renderLicenseLink(license) {
+  const licenseLink = renderLicenseLink(license);
+
+  if (licenseLink) {
+    return `[![License](https://img.shields.io/badge/License-${license}-yellow.svg)](${licenseLink})`;
+  } else {
+    return "";
+  }
+}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
@@ -59,6 +73,8 @@ ${renderLicenseSection(data.license)}
 ${data.test}
 
 ## Questions
+
+For questions about this project, please use the following contact methods: 
 
 <ul>
   <li> <a href='mailto://${data.email}?subject="contact me"&body="hi"'> Email Me </a> </li>
